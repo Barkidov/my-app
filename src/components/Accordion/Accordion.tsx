@@ -1,17 +1,17 @@
-const Accordion = () => {
+const Accordion = (props: any) => {
   console.log("Accordion render");
   return (
     <div>
-      <AccordionTitle />
+      <AccordionTitle title={'Меню'}/>
       <AccordionBody />
     </div>
   );
 };
 
-const AccordionTitle = () => {
+const AccordionTitle = (props: any) => {
   return (
     <div>
-      <h3>Меню</h3>
+      <h3>{props.title}</h3>
     </div>
   );
 };
